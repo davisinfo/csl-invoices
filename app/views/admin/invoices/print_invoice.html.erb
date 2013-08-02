@@ -43,7 +43,7 @@
     </tr>
     <tr>
       <td> <%= @invoice.customer.postcode %></td>
-    <td>2013-08-02</td>
+    <td><%= @invoice.created_at.strftime("%d %b. %Y") %></td>
     </tr>
     <tr>
       <td>Romania</td>
