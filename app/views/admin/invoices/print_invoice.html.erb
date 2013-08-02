@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Invoices</title>
+
+</head>
+<body>
+
+<div class="document">
+
+   <table width="100%">
+     <tr>
+       <td><h2>Construction Support Line LTD 3 Tavern Quay, <%= @invoice.customer.address_2 %>, <%= @invoice.customer.postcode %>, <%= @invoice.customer.city %>, Romania</h2></td>
+
+     </tr>
+    <tr>
+      <td><%= @invoice.customer.company %></td>
+    </tr>
+     </table>
+  <table width="100%">
+     <tr>
+      <td width="60%"><b>Address</b></td>
+       <td </td>
+     </tr>
+    <tr>
+      <td><%= @invoice.customer.first_name %> <%= @invoice.customer.last_name %></td>
+      <td></td>
+
+    </tr>
+    <tr>
+
+     <td><%= @invoice.customer.address_1 %></td>
+
+      <td><b> Document type</b> </td>
+    </tr>
+    <tr>
+      <td> <%= @invoice.customer.address_2 %></td>
+      <td> Invoice </td>
+    </tr>
+    <tr>
+      <td> <%= @invoice.customer.city %></td>
+      <td><b> Date (tax point)</b> </td>
+    </tr>
+    <tr>
+      <td> <%= @invoice.customer.postcode %></td>
+    <td>2013-08-02</td>
+    </tr>
+    <tr>
+      <td>Romania</td>
+      <td><b>Invoice id</b> </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><%= @invoice.id %> </td>
+    </tr>
+    <tr>
+      <td><b>Contact number</b></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><%= @invoice.customer.contact_number %></td>
+      <td></td>
+    </tr>
+   </table>
+  <br>
+  <br>
+  <table width="100%" style="border:1px">
+    <tr height="25">
+      <th style="border-bottom: solid black 2px"width="10%" align="left">No</th>
+      <th style="border-bottom: solid black 2px"width="60%" align="left">Product description</th>
+      <th style="border-bottom: solid black 2px"width="15%" align="left">Value</th>
+      <th style="border-bottom: solid black 2px"width="15%" align="left">Qty</th>
+
+
+    </tr>
+          <% i=0 %>
+    <% s=0 %>
+    <% @invoice.invoice_items.each do | item| %>
+        <tr height="25">
+          <% i+=1 %>
+          <td width="50"><%= i %></td>
+          <td width="50"><%= item.name %></td>
+          <td><%= item.value %></td>
+          <% s+= item.value*item.quantity %>
+          <td><%= item.quantity %></td>
+          <td></td>
+
+
+        </tr>
+     <% end %>
+    <tr height="20">
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+
+    <tr  height="30">
+    <td></td>
+    <td></td>
+    <td>Total Net</td>
+    <td><%=  number_to_currency(s, :unit => "") %></td>
+    </tr>
+    <tr  height="30">
+      <td></td>
+      <td></td>
+      <td><b>VAT 24%</b></td>
+      <% t=s*24/100 %>
+      <td><%= number_to_currency(t, :unit => "") %></td>
+    </tr>
+    <tr  height="30">
+      <td></td>
+      <td></td>
+      <td><b>Total + VAT</b></td>
+      <td><b><%=  number_to_currency(s+t, :unit => "") %></b></td>
+    </tr>
+  </table>
+
+</div>
+<%= yield %>
+
+</body>
+</html>
