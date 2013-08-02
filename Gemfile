@@ -5,7 +5,14 @@ gem 'rails', '3.2.9'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+group :development do
+  gem 'sqlite3'
+end
+
+group :production, :staging do
+    gem 'pg'
+end
+
 gem 'activeadmin'
 gem "meta_search", '>= 1.1.0.pre'
 
@@ -38,3 +45,8 @@ gem 'jquery-ui-rails'
 
 # To use debugger
 # gem 'debugger'
+
+group :pdf_generator do
+  gem "wkhtmltopdf-heroku"
+end
+

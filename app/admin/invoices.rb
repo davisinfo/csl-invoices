@@ -6,6 +6,7 @@ ActiveAdmin.register Invoice do
     respond_to do |format|
       format.html
       format.pdf {
+        require 'wkhtmltopdf-heroku' if Rails.env == 'production'
         render :pdf => "print_invoice",:disable_smart_shrinking => false,
                :wkhtmltopdf => 'C:\Program Files (x86)\wkhtmltopdf\wkhtmltopdf.exe',
                :template => 'admin/invoices/print_invoice.html.erb', :layout => false,
