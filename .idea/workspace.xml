@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0868744f-bb66-4d41-9dde-efe626101277" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/invoices.rb" afterPath="$PROJECT_DIR$/app/admin/invoices.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/invoices/print_invoice.html.erb" afterPath="$PROJECT_DIR$/app/views/admin/invoices/print_invoice.html.erb" />
     </list>
     <ignored path="invoices.iws" />
@@ -123,7 +122,7 @@
       <file leaf-file-name="print_invoice.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/admin/invoices/print_invoice.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="131" column="18" selection-start="2633" selection-end="2633" vertical-scroll-proportion="0.67974883">
+            <state line="183" column="52" selection-start="5191" selection-end="5191" vertical-scroll-proportion="0.9466248">
               <folding>
                 <element signature="tag#head#0;tag#html#0" expanded="false" />
                 <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -956,7 +955,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/admin/invoices/print_invoice.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="18" selection-start="2633" selection-end="2633" vertical-scroll-proportion="0.67974883">
+        <state line="183" column="52" selection-start="5191" selection-end="5191" vertical-scroll-proportion="0.9466248">
           <folding>
             <element signature="tag#head#0;tag#html#0" expanded="false" />
             <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
