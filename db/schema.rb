@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130808090507) do
+ActiveRecord::Schema.define(:version => 20130812194543) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -76,8 +76,9 @@ ActiveRecord::Schema.define(:version => 20130808090507) do
 
   create_table "invoices", :force => true do |t|
     t.integer  "customer_id"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+    t.integer  "invoice_number"
   end
 
   add_index "invoices", ["customer_id"], :name => "index_invoices_on_customer_id"

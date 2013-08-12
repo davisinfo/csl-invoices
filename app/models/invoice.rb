@@ -1,7 +1,7 @@
 class Invoice < ActiveRecord::Base
   belongs_to :customer
   # attr_accessible :title, :body
-  attr_accessible :customer_id, :invoice_items_attributes, :id, :due_date
+  attr_accessible :customer_id, :invoice_items_attributes, :id, :due_date, :invoice_number
   has_many :invoice_items
   accepts_nested_attributes_for :invoice_items, :allow_destroy => true
 

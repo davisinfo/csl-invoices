@@ -26,16 +26,19 @@ ActiveAdmin.register Invoice do
     link_to "Print invoice", print_invoice_admin_invoice_path(:format => :pdf)
   end
   form do |f|
+
     f.inputs "Customer" do
       f.input :customer
+      f.input :invoice_number, :input_html => {:size => 2, :readonly => true, :value => "#{Invoice.order('created_at desc').first.invoice_number.to_i + 1}"},
+              :label => 'Invoice number <a href="#" onclick="$(\'#invoice_invoice_number\').attr(\'readonly\',false);">change</a>'.html_safe
     end
 
     f.has_many :invoice_items do |g|
       g.input :_destroy, :as => :boolean, :label => "Remove this Product" unless g.object.nil? or g.object.id.nil?
-      g.input :product_name
-      g.input :value
-      g.input :quantity
-      g.input :discount
+      g.input :product_name, :required => true
+      g.input :value, :required => true
+      g.input :quantity, :required => true
+      g.input :discount, :input_html => {:value => "0.00"}
       g.input :cis, :as => :boolean, :label => "CIS"
       g.input :vat, :as => :boolean, :label => "VAT"
     end
