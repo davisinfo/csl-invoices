@@ -8,9 +8,9 @@ gem 'rails', '3.2.9'
 group :development do
   gem 'sqlite3'
 end
-
-group :production, :staging do
-    gem 'pg'
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
 end
 
 gem 'activeadmin'
