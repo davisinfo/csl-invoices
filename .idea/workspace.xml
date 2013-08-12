@@ -14,7 +14,7 @@
     <file path="/invoice_item.rb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1375949397161" ignored="false" />
     <file path="/invoices.rb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1376051876671" ignored="false" />
     <file path="/20130801060529_create_invoice_items.rb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1375381677038" ignored="false" />
-    <file path="/print_invoice.html.erb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1376309934136" ignored="false" />
+    <file path="/print_invoice.html.erb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1376310187932" ignored="false" />
     <file path="C:/work/portal/app/models/contact.rb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1375455408348" ignored="false" />
     <file path="/contact.rb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1375455406852" ignored="false" />
     <file path="/fragment.rb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1375454536683" ignored="false" />
@@ -130,7 +130,7 @@
       <file leaf-file-name="print_invoice.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/admin/invoices/print_invoice.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="131" column="18" selection-start="2624" selection-end="2624" vertical-scroll-proportion="0.39717427">
+            <state line="155" column="61" selection-start="3896" selection-end="3896" vertical-scroll-proportion="0.9466248">
               <folding>
                 <element signature="tag#head#0;tag#html#0" expanded="false" />
                 <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -934,7 +934,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/admin/invoices/print_invoice.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="18" selection-start="2624" selection-end="2624" vertical-scroll-proportion="0.39717427">
+        <state line="155" column="61" selection-start="3896" selection-end="3896" vertical-scroll-proportion="0.9466248">
           <folding>
             <element signature="tag#head#0;tag#html#0" expanded="false" />
             <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
