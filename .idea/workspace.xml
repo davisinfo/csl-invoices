@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0868744f-bb66-4d41-9dde-efe626101277" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/invoice.rb" afterPath="$PROJECT_DIR$/app/models/invoice.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/invoices.iml" afterPath="$PROJECT_DIR$/.idea/invoices.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/invoices.rb" afterPath="$PROJECT_DIR$/app/admin/invoices.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/invoices/print_invoice.html.erb" afterPath="$PROJECT_DIR$/app/views/admin/invoices/print_invoice.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="0868744f-bb66-4d41-9dde-efe626101277" name="Default" comment="" />
     <ignored path="invoices.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Gemfile" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1375456001759" ignored="false" />
@@ -47,7 +40,7 @@
       <file leaf-file-name="invoices.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/admin/invoices.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="3" selection-start="2120" selection-end="2120" vertical-scroll-proportion="0.41347626">
+            <state line="51" column="3" selection-start="2120" selection-end="2120" vertical-scroll-proportion="1.1026033">
               <folding />
             </state>
           </provider>
@@ -1035,7 +1028,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/admin/invoices.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="3" selection-start="2120" selection-end="2120" vertical-scroll-proportion="0.41347626">
+        <state line="51" column="3" selection-start="2120" selection-end="2120" vertical-scroll-proportion="1.1026033">
           <folding />
         </state>
       </provider>
