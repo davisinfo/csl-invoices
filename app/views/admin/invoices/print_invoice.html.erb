@@ -149,8 +149,8 @@
   <% @invoice.invoice_items.each do |item| %>
       <tr height="25">
         <% i+=1 %>
-        <td style="border-left:1px solid black;" width="50" align="center"><%= i %></td>
-        <td style="border-left:1px solid black;" width="50"><%= item.name %></td>
+        <td style="border-left:1px solid black;" align="center"><%= i %></td>
+        <td style="border-left:1px solid black;"><%= item.name %></td>
         <td style="border-left:1px solid black;" align="right"><%= number_to_currency(item.value, :unit => "&pound; ") %></td>
         <% subtotal = item.value*item.quantity %>
 
@@ -173,8 +173,8 @@
       <% if item.discount > 0 %>
           <tr height="25">
             <% i+=1 %>
-            <td style="border-left:1px solid black;" width="50" align="center"><%= i %></td>
-            <td style="border-left:1px solid black;" width="50">
+            <td style="border-left:1px solid black;" align="center"><%= i %></td>
+            <td style="border-left:1px solid black;">
               <i><%= 'Discount for ' + item.name + ', ' + item.discount.to_i.to_s + '%' %></i></td>
             <td style="border-left:1px solid black;" align="right"><%= number_to_currency(item.value*item.discount*item.quantity/100, :unit => "&pound; ") %></td>
 
