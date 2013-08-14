@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0868744f-bb66-4d41-9dde-efe626101277" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/mailers/customer_mailer.rb" afterPath="$PROJECT_DIR$/app/mailers/customer_mailer.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/invoices.iml" afterPath="$PROJECT_DIR$/.idea/invoices.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="invoices.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -129,7 +127,7 @@
       <file leaf-file-name="customer_mailer.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/mailers/customer_mailer.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="17" selection-start="229" selection-end="229" vertical-scroll-proportion="0.15620214">
+            <state line="6" column="20" selection-start="232" selection-end="232" vertical-scroll-proportion="0.15620214">
               <folding />
             </state>
           </provider>
@@ -976,7 +974,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/mailers/customer_mailer.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="17" selection-start="229" selection-end="229" vertical-scroll-proportion="0.15620214">
+        <state line="6" column="20" selection-start="232" selection-end="232" vertical-scroll-proportion="0.15620214">
           <folding />
         </state>
       </provider>
