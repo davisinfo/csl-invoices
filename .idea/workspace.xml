@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0868744f-bb66-4d41-9dde-efe626101277" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environment.rb" afterPath="$PROJECT_DIR$/config/environment.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/mailers/customer_mailer.rb" afterPath="$PROJECT_DIR$/app/mailers/customer_mailer.rb" />
     </list>
     <ignored path="invoices.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,7 +46,7 @@
       <file leaf-file-name="invoices.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/admin/invoices.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="36" selection-start="32" selection-end="1217" vertical-scroll-proportion="0.0">
+            <state line="9" column="40" selection-start="220" selection-end="248" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -61,10 +61,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="environment.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="environment.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/environment.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="48" selection-start="392" selection-end="392" vertical-scroll-proportion="0.2766272">
+            <state line="11" column="48" selection-start="392" selection-end="392" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -124,10 +124,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="customer_mailer.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="customer_mailer.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/mailers/customer_mailer.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="35" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0">
+            <state line="8" column="36" selection-start="286" selection-end="286" vertical-scroll-proportion="0.20118344">
               <folding />
             </state>
           </provider>
@@ -169,8 +169,8 @@
         <option value="$PROJECT_DIR$/app/admin/invoices.rb" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
         <option value="$PROJECT_DIR$/app/admin/customers.rb" />
-        <option value="$PROJECT_DIR$/app/mailers/customer_mailer.rb" />
         <option value="$PROJECT_DIR$/config/environment.rb" />
+        <option value="$PROJECT_DIR$/app/mailers/customer_mailer.rb" />
       </list>
     </option>
   </component>
@@ -943,13 +943,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/admin/invoices.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="36" selection-start="32" selection-end="1217" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="30" selection-start="635" selection-end="635" vertical-scroll-proportion="0.0">
@@ -971,16 +964,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/mailers/customer_mailer.rb">
+    <entry file="file://$PROJECT_DIR$/config/environment.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="35" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0">
+        <state line="11" column="48" selection-start="392" selection-end="392" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environment.rb">
+    <entry file="file://$PROJECT_DIR$/app/admin/invoices.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="48" selection-start="392" selection-end="392" vertical-scroll-proportion="0.2766272">
+        <state line="9" column="40" selection-start="220" selection-end="248" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mailers/customer_mailer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="36" selection-start="286" selection-end="286" vertical-scroll-proportion="0.20118344">
           <folding />
         </state>
       </provider>
