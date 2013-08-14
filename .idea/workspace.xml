@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0868744f-bb66-4d41-9dde-efe626101277" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/development.rb" afterPath="$PROJECT_DIR$/config/environments/development.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/customers.rb" afterPath="$PROJECT_DIR$/app/admin/customers.rb" />
     </list>
     <ignored path="invoices.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,7 +23,7 @@
     <file path="/customer_mailer.rb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1376419155177" ignored="false" />
     <file path="/email_invoice.html.erb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1376430097387" ignored="false" />
     <file path="/environment.rb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1376464757929" ignored="false" />
-    <file path="/customers.rb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1376476091330" ignored="false" />
+    <file path="/customers.rb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1376500931014" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,10 +52,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="customers.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="customers.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/admin/customers.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="10" selection-start="0" selection-end="308" vertical-scroll-proportion="0.0">
+            <state line="14" column="19" selection-start="316" selection-end="316" vertical-scroll-proportion="0.35207102">
               <folding />
             </state>
           </provider>
@@ -115,10 +115,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="development.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="development.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="2" selection-start="1291" selection-end="1291" vertical-scroll-proportion="0.82988167">
+            <state line="33" column="2" selection-start="1291" selection-end="1291" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -169,8 +169,8 @@
         <option value="$PROJECT_DIR$/config/initializers/active_admin.rb" />
         <option value="$PROJECT_DIR$/app/models/customer.rb" />
         <option value="$PROJECT_DIR$/app/admin/invoices.rb" />
-        <option value="$PROJECT_DIR$/app/admin/customers.rb" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
+        <option value="$PROJECT_DIR$/app/admin/customers.rb" />
       </list>
     </option>
   </component>
@@ -182,8 +182,8 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
-    <option name="y" value="67" />
+    <option name="x" value="51" />
+    <option name="y" value="40" />
     <option name="width" value="1618" />
     <option name="height" value="870" />
   </component>
@@ -790,7 +790,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="67" width="1618" height="870" extended-state="0" />
+    <frame x="51" y="40" width="1618" height="870" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -957,13 +957,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/admin/customers.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="10" selection-start="0" selection-end="308" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/environment.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="0" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0">
@@ -980,7 +973,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="2" selection-start="1291" selection-end="1291" vertical-scroll-proportion="0.82988167">
+        <state line="33" column="2" selection-start="1291" selection-end="1291" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/customers.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="19" selection-start="316" selection-end="316" vertical-scroll-proportion="0.35207102">
           <folding />
         </state>
       </provider>
