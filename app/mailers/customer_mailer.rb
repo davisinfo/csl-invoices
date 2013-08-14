@@ -1,5 +1,5 @@
 class CustomerMailer < ActionMailer::Base
-  default from: "csl_invoices@csl-ltd.com"
+  default from: "lilian.marin21@gmail.com"
 
   def email_invoice(invoice)
     @invoice = invoice
