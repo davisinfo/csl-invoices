@@ -3,7 +3,7 @@ class CustomerMailer < ActionMailer::Base
 
   def email_invoice(invoice)
     @invoice = invoice
-    mail(:subject => 'Your Invoice', :to => invoice.customer.email) do |format|
+    mail(:subject => 'CSL Invoice No.'+invoice.invoice_number, :to => invoice.customer.email) do |format|
       format.html
       format.pdf do
         require 'wkhtmltopdf-heroku'
