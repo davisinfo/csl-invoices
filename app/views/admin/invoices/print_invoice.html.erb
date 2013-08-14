@@ -170,7 +170,7 @@
 
   <% end %>
   <% @invoice.invoice_items.each do |item| %>
-      <% if item.discount > 0 %>
+      <% if item.discount.to_i > 0 %>
           <tr height="25">
             <% i+=1 %>
             <td style="border-left:1px solid black;" align="center"><%= i %></td>

@@ -22,8 +22,19 @@ ActiveAdmin.register Invoice do
       }
     end
   end
+  member_action :email_invoice,
+:only => :show do
+    @invoice = Invoice.find(params[:id])
+   CustomerMailer.email_invoice(@invoice).deliver
+    redirect_to admin_invoice_path(:notice => "Email sent")
+  end
+
+
   action_item :only => :show do
     link_to "Print invoice", print_invoice_admin_invoice_path(:format => :pdf)
+  end
+  action_item :only => :show do
+    link_to "Send invoice by e-mail", email_invoice_admin_invoice_path
   end
   form do |f|
 
@@ -31,7 +42,8 @@ ActiveAdmin.register Invoice do
       f.input :customer
       f.input :invoice_number, :input_html => {:size => 2, :readonly => true, :value => "#{Invoice.order('created_at desc').first.invoice_number.to_i + 1}"},
               :label => 'Invoice number <a href="#" onclick="$(\'#invoice_invoice_number\').attr(\'readonly\',false);">change</a>'.html_safe
-    end
+      end
+
 
     f.has_many :invoice_items do |g|
       g.input :_destroy, :as => :boolean, :label => "Remove this Product" unless g.object.nil? or g.object.id.nil?
@@ -56,7 +68,7 @@ ActiveAdmin.register Invoice do
       table_for invoice.invoice_items do
         column :id, :width => 100
         column :product_name
-        column :value
+
         column :quantity
         column :discount
         column :cis do |obj|
@@ -65,6 +77,14 @@ ActiveAdmin.register Invoice do
         column :vat do |obj|
           obj.vat? ? 'Yes' : 'No'
         end
+        column "Net value", :value
+        column "VAT Value", :value do |obj|
+          obj.vat? ? obj.value/5 : "0.00"
+        end
+        column "Gross", :value do |obj|
+          obj.vat? ?  obj.value*6/5 : obj.value
+        end
+
         column :created_at
 
       end
