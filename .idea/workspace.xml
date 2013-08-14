@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0868744f-bb66-4d41-9dde-efe626101277" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/mailers/customer_mailer.rb" afterPath="$PROJECT_DIR$/app/mailers/customer_mailer.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/customer_mailer/email_invoice.html.erb" afterPath="$PROJECT_DIR$/app/views/customer_mailer/email_invoice.html.erb" />
     </list>
     <ignored path="invoices.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -20,8 +21,8 @@
     <file path="/fragment.rb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1375454536683" ignored="false" />
     <file path="/dashboard.rb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1376126325330" ignored="false" />
     <file path="/production.rb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1376310597649" ignored="false" />
-    <file path="/customer_mailer.rb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1376511544147" ignored="false" />
-    <file path="/email_invoice.html.erb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1376509974654" ignored="false" />
+    <file path="/customer_mailer.rb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1376511908269" ignored="false" />
+    <file path="/email_invoice.html.erb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1376511772198" ignored="false" />
     <file path="/environment.rb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1376503249858" ignored="false" />
     <file path="/customers.rb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1376500931014" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -64,7 +65,7 @@
       <file leaf-file-name="email_invoice.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/customer_mailer/email_invoice.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="113" selection-start="321" selection-end="321" vertical-scroll-proportion="-5.8846154">
+            <state line="9" column="135" selection-start="343" selection-end="343" vertical-scroll-proportion="-5.8846154">
               <folding />
             </state>
           </provider>
@@ -73,7 +74,7 @@
       <file leaf-file-name="print_invoice.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/admin/invoices/print_invoice.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="25" selection-start="1281" selection-end="1281" vertical-scroll-proportion="-17.576923">
+            <state line="98" column="53" selection-start="1941" selection-end="1962" vertical-scroll-proportion="-14.307693">
               <folding>
                 <element signature="n#style#0;n#table#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -129,7 +130,7 @@
       <file leaf-file-name="customer_mailer.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/mailers/customer_mailer.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="61" selection-start="193" selection-end="193" vertical-scroll-proportion="0.13016845">
+            <state line="5" column="66" selection-start="198" selection-end="198" vertical-scroll-proportion="0.13016845">
               <folding />
             </state>
           </provider>
@@ -966,7 +967,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/admin/invoices/print_invoice.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="25" selection-start="1281" selection-end="1281" vertical-scroll-proportion="-17.576923">
+        <state line="98" column="53" selection-start="1941" selection-end="1962" vertical-scroll-proportion="-14.307693">
           <folding>
             <element signature="n#style#0;n#table#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -975,14 +976,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/customer_mailer/email_invoice.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="113" selection-start="321" selection-end="321" vertical-scroll-proportion="-5.8846154">
+        <state line="9" column="135" selection-start="343" selection-end="343" vertical-scroll-proportion="-5.8846154">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/mailers/customer_mailer.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="61" selection-start="193" selection-end="193" vertical-scroll-proportion="0.13016845">
+        <state line="5" column="66" selection-start="198" selection-end="198" vertical-scroll-proportion="0.13016845">
           <folding />
         </state>
       </provider>
