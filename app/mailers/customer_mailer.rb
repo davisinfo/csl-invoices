@@ -4,8 +4,7 @@ class CustomerMailer < ActionMailer::Base
   def email_invoice(invoice)
     @invoice = invoice
     mail(:subject => 'Your Invoice', :to => invoice.customer.email) do |format|
-      format.html
-      format.pdf do
+      format.text  do
         require 'wkhtmltopdf-heroku'
         attachments['invoice.pdf'] = render_to_string :pdf => "print_invoice", :disable_smart_shrinking => false,
                                                       :template => 'admin/invoices/print_invoice.html.erb', :layout => false,
