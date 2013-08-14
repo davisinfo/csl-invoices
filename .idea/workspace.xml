@@ -127,7 +127,7 @@
       <file leaf-file-name="customer_mailer.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/mailers/customer_mailer.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="78" selection-start="365" selection-end="365" vertical-scroll-proportion="0.23430322">
+            <state line="12" column="138" selection-start="784" selection-end="784" vertical-scroll-proportion="0.31240427">
               <folding />
             </state>
           </provider>
@@ -980,7 +980,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/mailers/customer_mailer.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="78" selection-start="365" selection-end="365" vertical-scroll-proportion="0.23430322">
+        <state line="12" column="138" selection-start="784" selection-end="784" vertical-scroll-proportion="0.31240427">
           <folding />
         </state>
       </provider>
