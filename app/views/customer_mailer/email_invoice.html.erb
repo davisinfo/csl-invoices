@@ -4,14 +4,11 @@
   <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
 </head>
 <body>
-<h1>Welcome to example.com, </h1>
+<h1>Dear <%= Customer.first_name%><%= Customer.last_name%> </h1>
 <p>
-  You have successfully signed up to example.com,
-  your username is: .<br/>
+  Please find attached your invoice with number <%=Invoice.id%>.<br/>
 </p>
-<p>
-  To login to the site, just follow this link:
-</p>
-<p>Thanks for joining and have a great day!</p>
+
+<p>Thanks for your interest in our products and have a great day!</p>
 </body>
 </html>
