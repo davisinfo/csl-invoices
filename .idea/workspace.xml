@@ -20,7 +20,7 @@
     <file path="/fragment.rb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1375454536683" ignored="false" />
     <file path="/dashboard.rb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1376126325330" ignored="false" />
     <file path="/production.rb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1376310597649" ignored="false" />
-    <file path="/customer_mailer.rb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1376504555191" ignored="false" />
+    <file path="/customer_mailer.rb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1376506423523" ignored="false" />
     <file path="/email_invoice.html.erb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1376430097387" ignored="false" />
     <file path="/environment.rb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1376503249858" ignored="false" />
     <file path="/customers.rb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1376500931014" ignored="false" />
@@ -127,7 +127,7 @@
       <file leaf-file-name="customer_mailer.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/mailers/customer_mailer.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="54" selection-start="341" selection-end="341" vertical-scroll-proportion="0.23430322">
+            <state line="9" column="78" selection-start="365" selection-end="365" vertical-scroll-proportion="0.23430322">
               <folding />
             </state>
           </provider>
@@ -980,7 +980,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/mailers/customer_mailer.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="54" selection-start="341" selection-end="341" vertical-scroll-proportion="0.23430322">
+        <state line="9" column="78" selection-start="365" selection-end="365" vertical-scroll-proportion="0.23430322">
           <folding />
         </state>
       </provider>
