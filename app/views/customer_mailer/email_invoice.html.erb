@@ -4,9 +4,10 @@
   <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
 </head>
 <body>
-<h1>Dear <%= Customer.first_name%><%= Customer.last_name%> </h1>
+
+<h1>Dear <%= @invoice.customer.first_name %><%= @invoice.customer.last_name %> </h1>
 <p>
-  Please find attached your invoice with number <%=Invoice.id%>.<br/>
+  Please find attached your invoice with number <%= @invoice.id %>.<br/>
 </p>
 
 <p>Thanks for your interest in our products and have a great day!</p>
