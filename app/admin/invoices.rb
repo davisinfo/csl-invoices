@@ -80,7 +80,8 @@ ActiveAdmin.register Invoice do
       row :invoice_number
       row :customer
       row :due_date do |obj|
-        obj.created_at + obj.due_date.day
+        d = obj.due_date
+        obj.created_at + d.day
       end
       row :created_at
 

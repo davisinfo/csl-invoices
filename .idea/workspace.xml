@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0868744f-bb66-4d41-9dde-efe626101277" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130809101252_add_duedate_to_invoices.rb" afterPath="$PROJECT_DIR$/db/migrate/20130809101252_add_duedate_to_invoices.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/invoices.rb" afterPath="$PROJECT_DIR$/app/admin/invoices.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/invoices/print_invoice.html.erb" afterPath="$PROJECT_DIR$/app/views/admin/invoices/print_invoice.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
     </list>
     <ignored path="invoices.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -15,7 +12,7 @@
     <file path="/customer.rb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1375953509753" ignored="false" />
     <file path="/invoice.rb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1376314363902" ignored="false" />
     <file path="/invoice_item.rb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1375949397161" ignored="false" />
-    <file path="/invoices.rb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1376572381219" ignored="false" />
+    <file path="/invoices.rb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1376573632581" ignored="false" />
     <file path="/20130801060529_create_invoice_items.rb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1375381677038" ignored="false" />
     <file path="/print_invoice.html.erb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1376572047329" ignored="false" />
     <file path="C:/work/portal/app/models/contact.rb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1375455408348" ignored="false" />
@@ -51,7 +48,7 @@
       <file leaf-file-name="invoices.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/admin/invoices.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="12" selection-start="1928" selection-end="2681" vertical-scroll-proportion="0.60796326">
+            <state line="80" column="32" selection-start="3241" selection-end="3241" vertical-scroll-proportion="0.5130168">
               <folding />
             </state>
           </provider>
@@ -1020,7 +1017,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/admin/invoices.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="12" selection-start="1928" selection-end="2681" vertical-scroll-proportion="0.60796326">
+        <state line="80" column="32" selection-start="3241" selection-end="3241" vertical-scroll-proportion="0.5130168">
           <folding />
         </state>
       </provider>
