@@ -44,13 +44,23 @@ ActiveAdmin.register Invoice do
   action_item :only => :show do
     link_to "Send invoice by e-mail", email_invoice_admin_invoice_path
   end
+
+
   form do |f|
 
     f.inputs "Customer" do
       f.input :customer
+      if f.object.new_record?
       f.input :invoice_number, :input_html => {:size => 2, :readonly => true, :value => "#{Invoice.order('created_at desc').first.invoice_number.to_i + 1}"},
               :label => 'Invoice number <a href="#" onclick="$(\'#invoice_invoice_number\').attr(\'readonly\',false);">change</a>'.html_safe
+      else
+        f.input :invoice_number, :input_html => {:size => 2, :readonly => true},
+                :label => 'Invoice number <a href="#" onclick="$(\'#invoice_invoice_number\').attr(\'readonly\',false);">change</a>'.html_safe
       end
+      f.input :due_date, :as => :radio, :collection => [["15 days", 15], ["30 days", 30], ["45 days",45],["60 days",60]]
+      end
+
+
 
 
     f.has_many :invoice_items do |g|
@@ -67,8 +77,14 @@ ActiveAdmin.register Invoice do
   end
   show do
     attributes_table do
+      row :invoice_number
       row :customer
+      row :due_date do |obj|
+        obj.created_at + obj.due_date.day
+      end
       row :created_at
+
+
 
 
     end

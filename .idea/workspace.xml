@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0868744f-bb66-4d41-9dde-efe626101277" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/mailers/customer_mailer.rb" afterPath="$PROJECT_DIR$/app/mailers/customer_mailer.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130809101252_add_duedate_to_invoices.rb" afterPath="$PROJECT_DIR$/db/migrate/20130809101252_add_duedate_to_invoices.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/invoices.rb" afterPath="$PROJECT_DIR$/app/admin/invoices.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/invoices/print_invoice.html.erb" afterPath="$PROJECT_DIR$/app/views/admin/invoices/print_invoice.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
     </list>
     <ignored path="invoices.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -13,9 +15,9 @@
     <file path="/customer.rb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1375953509753" ignored="false" />
     <file path="/invoice.rb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1376314363902" ignored="false" />
     <file path="/invoice_item.rb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1375949397161" ignored="false" />
-    <file path="/invoices.rb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1376515029835" ignored="false" />
+    <file path="/invoices.rb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1376572381219" ignored="false" />
     <file path="/20130801060529_create_invoice_items.rb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1375381677038" ignored="false" />
-    <file path="/print_invoice.html.erb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1376430469787" ignored="false" />
+    <file path="/print_invoice.html.erb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1376572047329" ignored="false" />
     <file path="C:/work/portal/app/models/contact.rb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1375455408348" ignored="false" />
     <file path="/contact.rb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1375455406852" ignored="false" />
     <file path="/fragment.rb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1375454536683" ignored="false" />
@@ -25,6 +27,8 @@
     <file path="/email_invoice.html.erb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1376511772198" ignored="false" />
     <file path="/environment.rb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1376503249858" ignored="false" />
     <file path="/customers.rb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1376500931014" ignored="false" />
+    <file path="/20130809101252_add_duedate_to_invoices.rb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1376571007918" ignored="false" />
+    <file path="/20130815123601_add_due_date_to_invoices.rb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1376571131973" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,16 +51,7 @@
       <file leaf-file-name="invoices.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/admin/invoices.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="17" selection-start="1378" selection-end="1378" vertical-scroll-proportion="0.5053599">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="customers.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/admin/customers.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="19" selection-start="316" selection-end="316" vertical-scroll-proportion="0.0">
+            <state line="60" column="12" selection-start="1928" selection-end="2681" vertical-scroll-proportion="0.60796326">
               <folding />
             </state>
           </provider>
@@ -71,22 +66,49 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="print_invoice.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/admin/invoices/print_invoice.html.erb">
+      <file leaf-file-name="invoice.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/invoice.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="53" selection-start="1941" selection-end="1962" vertical-scroll-proportion="-14.307693">
-              <folding>
-                <element signature="n#style#0;n#table#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="18" column="42" selection-start="357" selection-end="357" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="environment.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/environment.rb">
+      <file leaf-file-name="20130809101252_add_duedate_to_invoices.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20130809101252_add_duedate_to_invoices.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="50" selection-start="465" selection-end="465" vertical-scroll-proportion="0.0">
+            <state line="5" column="4" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20130815123601_add_due_date_to_invoices.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20130815123601_add_due_date_to_invoices.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="45" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="invoice_item.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/invoice_item.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="8" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="print_invoice.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/admin/invoices/print_invoice.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="111" column="52" selection-start="2206" selection-end="2206" vertical-scroll-proportion="-19.461538">
+              <folding>
+                <element signature="n#style#0;n#table#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -100,28 +122,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="development.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="2" selection-start="1291" selection-end="1291" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="application_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="production.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="30" selection-start="635" selection-end="635" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -158,14 +162,11 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/models/invoice_item.rb" />
-        <option value="$PROJECT_DIR$/config/initializers/session_store.rb" />
         <option value="$PROJECT_DIR$/app/admin/dashboard.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/app/models/invoice.rb" />
         <option value="$PROJECT_DIR$/app/helpers/link_to_function_helper.rb" />
-        <option value="$PROJECT_DIR$/app/views/admin/invoices/print_invoice.html.erb" />
         <option value="$PROJECT_DIR$/config/initializers/active_admin.rb" />
         <option value="$PROJECT_DIR$/app/models/customer.rb" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
@@ -173,6 +174,9 @@
         <option value="$PROJECT_DIR$/config/environment.rb" />
         <option value="$PROJECT_DIR$/app/views/customer_mailer/email_invoice.html.erb" />
         <option value="$PROJECT_DIR$/app/mailers/customer_mailer.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20130809101252_add_duedate_to_invoices.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20130815123601_add_due_date_to_invoices.rb" />
+        <option value="$PROJECT_DIR$/app/views/admin/invoices/print_invoice.html.erb" />
         <option value="$PROJECT_DIR$/app/admin/invoices.rb" />
       </list>
     </option>
@@ -185,8 +189,7 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="30" />
-    <option name="y" value="86" />
+    <option name="y" value="47" />
     <option name="width" value="1618" />
     <option name="height" value="870" />
   </component>
@@ -251,6 +254,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="invoices" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="invoices" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="invoices" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="invoices" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="invoices" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrate" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -793,7 +828,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="30" y="86" width="1618" height="870" extended-state="0" />
+    <frame x="0" y="47" width="1618" height="870" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -876,34 +911,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/admin/admin_user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/active_admin.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/invoice_item.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="8" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/invoice.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="90" selection-start="310" selection-end="310" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/customer.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -967,15 +974,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/invoices/print_invoice.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="53" selection-start="1941" selection-end="1962" vertical-scroll-proportion="-14.307693">
-          <folding>
-            <element signature="n#style#0;n#table#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/mailers/customer_mailer.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="46" selection-start="368" selection-end="368" vertical-scroll-proportion="0.0">
@@ -983,9 +981,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/invoice_item.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="8" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/invoice.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="42" selection-start="357" selection-end="357" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130809101252_add_duedate_to_invoices.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="4" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130815123601_add_due_date_to_invoices.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="45" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/invoices/print_invoice.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="111" column="52" selection-start="2206" selection-end="2206" vertical-scroll-proportion="-19.461538">
+          <folding>
+            <element signature="n#style#0;n#table#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/admin/invoices.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="17" selection-start="1378" selection-end="1378" vertical-scroll-proportion="0.5053599">
+        <state line="60" column="12" selection-start="1928" selection-end="2681" vertical-scroll-proportion="0.60796326">
           <folding />
         </state>
       </provider>
