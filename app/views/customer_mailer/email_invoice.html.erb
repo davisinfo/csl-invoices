@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
 </head>
 <body>
 
 <h1>Dear <%= @invoice.customer.first_name %> <%= @invoice.customer.last_name %> </h1>
-
 <p>
-  Please find attached your invoice with number <%= @invoice.invoice_number %>, issued
-  at <%= @invoice.created_at.strftime("%d %b. %Y") %><br/>
+  Please find attached your invoice with number <%= @invoice.invoice_number %>, issued at <%= @invoice.created_at.strftime("%d %b. %Y") %><br/>
 </p>
 
 <p>Thanks for your interest in our products and have a great day!</p>

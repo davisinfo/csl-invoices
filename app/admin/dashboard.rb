@@ -1,26 +1,23 @@
 ActiveAdmin.register_page "Dashboard" do
-  menu :priority => 1
-  content :title => proc{ I18n.t("active_admin.dashboard") } do
-    columns do
-      column do
-        panel "Recent Invoices" do
-          table_for Invoice.order("created_at desc").limit(5) do
-            column :invoice_number do |invoice|
-              link_to invoice.invoice_number, [:admin, invoice]
-            end
 
-            column :created_at
-            column :due_date do |obj|
+  menu :priority => 1, :label => proc { I18n.t("active_admin.dashboard") }
 
-              (obj.created_at + obj.due_date.to_i.day).strftime("%B %d, %Y %H:%M")
-            end
-          end
-          strong { link_to "View All Invoices", admin_invoices_path }
-        end
-      end
-    end
+      content :title => proc { I18n.t("active_admin.dashboard") } do
 
-# Here is an example of a simple dashboard with columns and panels.
+         section "Recent Invoices" do
+           table_for Invoice.order("created_at desc").limit(5) do
+             column :id do |invoice|
+               link_to invoice.id, [:admin, invoice]
+             end
+
+             column :customer
+             column :created_at
+
+           end
+
+           strong {link_to "View All Invoices", admin_invoices_path}
+         end
+    # Here is an example of a simple dashboard with columns and panels.
     #
     # columns do
     #   column do
