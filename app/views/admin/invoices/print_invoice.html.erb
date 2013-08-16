@@ -109,7 +109,7 @@
     <td></td>
     <td></td>
     <td>
-      <% due=@invoice.created_at + @invoice.due_date.day %><%= due.strftime("%d %b. %Y") %> </td>
+      <% due=@invoice.created_at + @invoice.due_date.to_i.day %><%= due.strftime("%d %b. %Y") %> </td>
   </tr>
   <tr>
     <td><b>Contact number</b></td>
