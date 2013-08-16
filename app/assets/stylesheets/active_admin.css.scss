@@ -14,9 +14,12 @@ $sidebar-width: 242px;
 // Overriding any non-variable SASS must be done after the fact.
 // For example, to change the default status-tag color:
 //
-   body.active_admin {
-     .status_tag { background: #6090DB; }
+body.active_admin {
+  .status_tag {
+    background: #6090DB;
   }
+}
+
 //
 // Notice that Active Admin CSS rules are nested within a
 // 'body.active_admin' selector to prevent conflicts with
@@ -27,11 +30,10 @@ $sidebar-width: 242px;
 // .active_admin       applies to any Active Admin namespace
 // .admin_namespace    applies to the admin namespace (eg: /admin)
 // .other_namespace    applies to a custom namespace named other (eg: /other)
-table
-{
-  border-collapse:collapse;
+table {
+  border-collapse: collapse;
 }
-table, td, th
-{
-  border:1px solid black;
+
+table, td, th {
+  border: 1px solid black;
 }

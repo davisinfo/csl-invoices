@@ -14,14 +14,14 @@
 ActiveRecord::Schema.define(:version => 20130815123601) do
 
   create_table "active_admin_comments", :force => true do |t|
-    t.string   "resource_id",   :null => false
-    t.string   "resource_type", :null => false
-    t.integer  "author_id"
-    t.string   "author_type"
-    t.text     "body"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
-    t.string   "namespace"
+    t.string "resource_id", :null => false
+    t.string "resource_type", :null => false
+    t.integer "author_id"
+    t.string "author_type"
+    t.text "body"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.string "namespace"
   end
 
   add_index "active_admin_comments", ["author_type", "author_id"], :name => "index_active_admin_comments_on_author_type_and_author_id"
@@ -29,57 +29,57 @@ ActiveRecord::Schema.define(:version => 20130815123601) do
   add_index "active_admin_comments", ["resource_type", "resource_id"], :name => "index_admin_notes_on_resource_type_and_resource_id"
 
   create_table "admin_users", :force => true do |t|
-    t.string   "email",                  :default => "", :null => false
-    t.string   "encrypted_password",     :default => "", :null => false
-    t.string   "reset_password_token"
+    t.string "email", :default => "", :null => false
+    t.string "encrypted_password", :default => "", :null => false
+    t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
-    t.integer  "sign_in_count",          :default => 0
+    t.integer "sign_in_count", :default => 0
     t.datetime "current_sign_in_at"
     t.datetime "last_sign_in_at"
-    t.string   "current_sign_in_ip"
-    t.string   "last_sign_in_ip"
-    t.datetime "created_at",                             :null => false
-    t.datetime "updated_at",                             :null => false
+    t.string "current_sign_in_ip"
+    t.string "last_sign_in_ip"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   add_index "admin_users", ["email"], :name => "index_admin_users_on_email", :unique => true
   add_index "admin_users", ["reset_password_token"], :name => "index_admin_users_on_reset_password_token", :unique => true
 
   create_table "customers", :force => true do |t|
-    t.string   "first_name"
-    t.string   "last_name"
-    t.string   "company"
-    t.string   "address_1"
-    t.string   "address_2"
-    t.string   "city"
-    t.string   "postcode"
-    t.datetime "created_at",     :null => false
-    t.datetime "updated_at",     :null => false
-    t.string   "contact_number"
-    t.string   "email"
+    t.string "first_name"
+    t.string "last_name"
+    t.string "company"
+    t.string "address_1"
+    t.string "address_2"
+    t.string "city"
+    t.string "postcode"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.string "contact_number"
+    t.string "email"
   end
 
   create_table "invoice_items", :force => true do |t|
-    t.integer  "invoice_id"
-    t.decimal  "value",        :precision => 8, :scale => 2
-    t.string   "product_name"
-    t.datetime "created_at",                                 :null => false
-    t.datetime "updated_at",                                 :null => false
-    t.integer  "quantity"
-    t.boolean  "cis"
-    t.boolean  "vat"
-    t.decimal  "discount",     :precision => 8, :scale => 2
+    t.integer "invoice_id"
+    t.decimal "value", :precision => 8, :scale => 2
+    t.string "product_name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.integer "quantity"
+    t.boolean "cis"
+    t.boolean "vat"
+    t.decimal "discount", :precision => 8, :scale => 2
   end
 
   add_index "invoice_items", ["invoice_id"], :name => "index_invoice_items_on_invoice_id"
 
   create_table "invoices", :force => true do |t|
-    t.integer  "customer_id"
-    t.datetime "created_at",     :null => false
-    t.datetime "updated_at",     :null => false
-    t.integer  "invoice_number"
-    t.integer  "due_date"
+    t.integer "customer_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.integer "invoice_number"
+    t.integer "due_date"
   end
 
   add_index "invoices", ["customer_id"], :name => "index_invoices_on_customer_id"
