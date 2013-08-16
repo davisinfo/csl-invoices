@@ -11,7 +11,7 @@ ActiveAdmin.register_page "Dashboard" do
 
             column :created_at
             column :due_date do |obj|
-              obj.due_date.to_i
+
               (obj.created_at + obj.due_date.to_i.day).strftime("%B %d, %Y %H:%M")
             end
           end
