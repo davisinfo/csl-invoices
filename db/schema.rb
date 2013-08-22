@@ -11,6 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(:version => 20130822164353) do
 
   create_table "achievement_unit_endorsements", :force => true do |t|
@@ -44,6 +45,9 @@ ActiveRecord::Schema.define(:version => 20130822164353) do
   end
 
   add_index "achievements", ["achievement_person_id"], :name => "index_achievements_on_achievement_person_id"
+=======
+ActiveRecord::Schema.define(:version => 20130815123601) do
+>>>>>>> 946a16bec46f657abc3a8b0d9a55992fb30acc56
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -545,8 +549,11 @@ ActiveRecord::Schema.define(:version => 20130822164353) do
     t.datetime "updated_at",      :null => false
     t.integer  "invoice_number"
     t.integer  "due_date"
+<<<<<<< HEAD
     t.integer  "address_id"
     t.integer  "ship_to_address"
+=======
+>>>>>>> 946a16bec46f657abc3a8b0d9a55992fb30acc56
   end
 
   add_index "invoices", ["customer_id"], :name => "index_invoices_on_customer_id"

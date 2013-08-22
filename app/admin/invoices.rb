@@ -56,9 +56,16 @@ ActiveAdmin.register Invoice do
       else
         f.input :invoice_number, :input_html => {:size => 2, :readonly => true},
                 :label => 'Invoice number <a href="#" onclick="$(\'#invoice_invoice_number\').attr(\'readonly\',false);">change</a>'.html_safe
+<<<<<<< HEAD
+      end
+      f.input :due_date, :as => :radio, :collection => [["15 days", 15], ["30 days", 30], ["45 days",45],["60 days",60]]
+=======
+>>>>>>> 946a16bec46f657abc3a8b0d9a55992fb30acc56
       end
       f.input :due_date, :as => :radio, :collection => [["15 days", 15], ["30 days", 30], ["45 days",45],["60 days",60]]
       end
+
+
 
 
 
