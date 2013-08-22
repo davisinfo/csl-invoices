@@ -1,19 +1,26 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.9'
+#gem 'rails', '3.2.2'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development do
-  gem 'sqlite3'
+#  gem 'sqlite3'
+  gem 'mysql2', '0.3.11'
 end
+
 group :production do
   gem 'pg'
   gem 'rails_12factor'
 end
 
-gem 'activeadmin'
+gem "cancan", :git => 'https://github.com/ryanb/cancan.git'
+# Portal core
+#gem 'csl-portal-core', :path => '/work/csl-portal-core'
+gem 'csl-portal-core', :git => 'https://cslinclude:cslinclude@bitbucket.org/devteamportal/csl-portal-core.git'
+
+#gem 'activeadmin'
 gem "meta_search", '>= 1.1.0.pre'
 gem 'validates_email_format_of'
 gem 'wicked_pdf'
