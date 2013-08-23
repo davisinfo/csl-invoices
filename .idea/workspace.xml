@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0868744f-bb66-4d41-9dde-efe626101277" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/invoice.rb" afterPath="$PROJECT_DIR$/app/models/invoice.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/invoice_item.rb" afterPath="$PROJECT_DIR$/app/models/invoice_item.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
     </list>
     <ignored path="invoices.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,7 +44,7 @@
     <file path="/work/csl-portal-core/Gemfile" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1377005298501" ignored="false" />
     <file path="/work/csl-portal-core/config/routes.rb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1377071356220" ignored="false" />
     <file path="/work/csl-portal-core/config/initializers/devise.rb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1377067770608" ignored="false" />
-    <file path="/a.dummy" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1376995965047" ignored="false" />
+    <file path="/a.dummy" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1377241907243" ignored="false" />
     <file path="/work/csl-portal-core/lib/csl-portal-core.rb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1376941912555" ignored="false" />
     <file path="/csl-portal-core.rb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1376941808981" ignored="false" />
     <file path="/engine.rb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1377005665523" ignored="false" />
@@ -87,6 +86,7 @@
     <file path="/work/csl-portal-core/test/dummy/Gemfile.lock" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1377072430824" ignored="false" />
     <file path="/database.yml" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1377107517863" ignored="false" />
     <file path="/contacts.rb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1377184925964" ignored="false" />
+    <file path="/schema.rb" changelist="0868744f-bb66-4d41-9dde-efe626101277" time="1377241979020" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,10 +115,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="invoice.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="invoice.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/invoice.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="55" selection-start="224" selection-end="224" vertical-scroll-proportion="0.099299066">
+            <state line="22" column="32" selection-start="650" selection-end="650" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gemfile.lock" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gemfile.lock">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="216" column="10" selection-start="5276" selection-end="5278" vertical-scroll-proportion="-9.064516">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="schema.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/db/schema.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1062" column="188" selection-start="43412" selection-end="43412" vertical-scroll-proportion="1.839172">
               <folding />
             </state>
           </provider>
@@ -137,24 +155,6 @@
         <entry file="file://$PROJECT_DIR$/app/models/invoice_item.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="3" column="0" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="invoices.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/clientarea/invoices.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="130" column="3" selection-start="0" selection-end="4590" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="invoices.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/admin/invoices.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="102" selection-start="1241" selection-end="1292" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -218,7 +218,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="/work/csl-portal-core/app/models/ability.rb" />
         <option value="/work/csl-portal-core/app/models/contact.rb" />
         <option value="/work/csl-portal-core/app/models/core_ability.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
@@ -234,6 +233,7 @@
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/models/invoice_item.rb" />
         <option value="$PROJECT_DIR$/app/models/invoice.rb" />
+        <option value="$PROJECT_DIR$/db/schema.rb" />
       </list>
     </option>
   </component>
@@ -976,9 +976,10 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25791857" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.74127907" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16559829" sideWeight="0.13494319" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16559829" sideWeight="0.74208146" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39917696" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.8650568" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -987,7 +988,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2582205" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1088,13 +1088,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/initializers/backtrace_silencers.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/mime_types.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1119,13 +1112,6 @@
     <entry file="file://$PROJECT_DIR$/app/clientarea/customers.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="61" selection-end="552" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1195,7 +1181,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/invoice.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="55" selection-start="224" selection-end="224" vertical-scroll-proportion="0.099299066">
+        <state line="22" column="32" selection-start="650" selection-end="650" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="216" column="10" selection-start="5276" selection-end="5278" vertical-scroll-proportion="-9.064516">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1062" column="188" selection-start="43412" selection-end="43412" vertical-scroll-proportion="1.839172">
           <folding />
         </state>
       </provider>
