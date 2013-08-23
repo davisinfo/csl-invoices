@@ -11,7 +11,6 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-
 ActiveRecord::Schema.define(:version => 20130822164353) do
 
   create_table "achievement_unit_endorsements", :force => true do |t|
@@ -46,9 +45,6 @@ ActiveRecord::Schema.define(:version => 20130822164353) do
 
   add_index "achievements", ["achievement_person_id"], :name => "index_achievements_on_achievement_person_id"
 
-ActiveRecord::Schema.define(:version => 20130815123601) do
-
-
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
     t.string   "resource_type", :null => false
@@ -80,18 +76,6 @@ ActiveRecord::Schema.define(:version => 20130815123601) do
   end
 
   add_index "addresses", ["resource_id", "resource_type"], :name => "index_addresses_on_resource_id_and_resource_type"
-
-  create_table "admin_notes", :force => true do |t|
-    t.string   "resource_id",     :null => false
-    t.string   "resource_type",   :null => false
-    t.integer  "admin_user_id"
-    t.string   "admin_user_type"
-    t.text     "body"
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
-  end
-
-  add_index "admin_notes", ["resource_type", "resource_id"], :name => "index_admin_notes_on_resource_type_and_resource_id"
 
   create_table "admin_users", :force => true do |t|
     t.string   "email",                                    :null => false
@@ -545,15 +529,12 @@ ActiveRecord::Schema.define(:version => 20130815123601) do
 
   create_table "invoices", :force => true do |t|
     t.integer  "customer_id"
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
     t.integer  "invoice_number"
     t.integer  "due_date"
-
     t.integer  "address_id"
-    t.integer  "ship_to_address"
-
-
+    t.integer  "ship_to_address_id"
   end
 
   add_index "invoices", ["customer_id"], :name => "index_invoices_on_customer_id"
@@ -1059,4 +1040,3 @@ ActiveRecord::Schema.define(:version => 20130815123601) do
   add_index "versions", ["item_type", "item_id"], :name => "index_versions_on_item_type_and_item_id"
 
 end
-  end

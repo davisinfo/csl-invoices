@@ -13,13 +13,13 @@ end
 group :production do
   gem 'pg'
   gem 'rails_12factor'
-
 end
+
 gem 'mysql2', '0.3.11'
-gem "cancan", :git => 'https://github.com/ryanb/cancan.git'
+#gem "cancan", :git => 'https://github.com/ryanb/cancan.git'
 # Portal core
 #gem 'csl-portal-core', :path => '/work/csl-portal-core'
-gem 'csl-portal-core', :git => 'https://cslinclude:cslinclude@bitbucket.org/devteamportal/csl-portal-core.git'
+gem 'csl-portal-core', '>= 0.0.3', :git => 'https://cslinclude:cslinclude@bitbucket.org/devteamportal/csl-portal-core.git'
 
 #gem 'activeadmin'
 gem "meta_search", '>= 1.1.0.pre'
