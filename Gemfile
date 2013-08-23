@@ -7,14 +7,15 @@ source 'https://rubygems.org'
 
 group :development do
 #  gem 'sqlite3'
-  gem 'mysql2', '0.3.11'
+
 end
 
 group :production do
   gem 'pg'
   gem 'rails_12factor'
-end
 
+end
+gem 'mysql2', '0.3.11'
 gem "cancan", :git => 'https://github.com/ryanb/cancan.git'
 # Portal core
 #gem 'csl-portal-core', :path => '/work/csl-portal-core'
