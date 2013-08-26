@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0868744f-bb66-4d41-9dde-efe626101277" name="Default" comment="&quot;Email sent&quot; notice fix">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/invoices.rb" afterPath="$PROJECT_DIR$/app/admin/invoices.rb" />
+      <change type="DELETED" beforePath="C:\Sites\invoices\csl-invoices" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="invoices.iws" />
@@ -138,7 +138,7 @@
       <file leaf-file-name="invoices.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/clientarea/invoices.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="0" selection-start="1659" selection-end="1659" vertical-scroll-proportion="0.71495324">
+            <state line="42" column="0" selection-start="1659" selection-end="1659" vertical-scroll-proportion="0.5957944">
               <folding />
             </state>
           </provider>
@@ -766,7 +766,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1932" height="1050" extended-state="1" />
+    <frame x="-9" y="-9" width="1932" height="1050" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -986,7 +986,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/clientarea/invoices.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="0" selection-start="1659" selection-end="1659" vertical-scroll-proportion="0.71495324">
+        <state line="42" column="0" selection-start="1659" selection-end="1659" vertical-scroll-proportion="0.5957944">
           <folding />
         </state>
       </provider>
