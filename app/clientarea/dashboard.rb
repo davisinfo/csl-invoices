@@ -6,7 +6,7 @@ ActiveAdmin.register_page "Dashboard", :namespace => :clientarea do
 
          section "Recent Invoices" do
 
-             table_for Invoice.joins(:customer).where(:customers => {:contact_id => current_contact.id})  do
+             table_for CustomerInvoice.joins(:customer).where(:customers => {:contact_id => current_contact.id})  do
 
              column :id do |invoice|
                link_to invoice.id, [:clientarea, invoice]

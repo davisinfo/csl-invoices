@@ -1,4 +1,4 @@
-ActiveAdmin.register Invoice do
+ActiveAdmin.register CustomerInvoice do
   index do
     column :id do |invoice|
       link_to invoice.id.to_s, "/clientarea/invoices/"+ invoice.id.to_s
@@ -13,7 +13,7 @@ ActiveAdmin.register Invoice do
 
   end
   member_action :print_invoice do
-    @invoice = Invoice.find(params[:id])
+    @invoice = CustomerInvoice.find(params[:id])
     respond_to do |format|
       format.html
       format.pdf {
@@ -36,7 +36,7 @@ ActiveAdmin.register Invoice do
   member_action :email_invoice,
 
                 :only => :show do
-    @invoice = Invoice.find(params[:id])
+    @invoice = CustomerInvoice.find(params[:id])
     require 'wkhtmltopdf-heroku'
     pdf = render_to_string :pdf => "print_invoice", :disable_smart_shrinking => false,
                            :template => 'clientarea/invoices/print_invoice.html.erb', :layout => false,
@@ -62,7 +62,7 @@ ActiveAdmin.register Invoice do
     f.inputs "Customer" do
       f.input :customer, :as => :select, :collection => Customer.where(:contact_id => current_contact.id)
       if f.object.new_record?
-        f.input :invoice_number, :input_html => {:size => 2, :readonly => true, :value => "#{(Invoice.order('created_at desc').first || Invoice.new).invoice_number.to_i + 1}"},
+        f.input :invoice_number, :input_html => {:size => 2, :readonly => true, :value => "#{(CustomerInvoice.order('created_at desc').first || CustomerInvoice.new).invoice_number.to_i + 1}"},
                 :label => 'Invoice number <a href="#" onclick="$(\'#invoice_invoice_number\').attr(\'readonly\',false);">change</a>'.html_safe
       else
         f.input :invoice_number, :input_html => {:size => 2, :readonly => true},

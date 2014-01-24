@@ -4,7 +4,7 @@ ActiveAdmin.register_page "Dashboard" do
     columns do
       column do
         panel "Recent Invoices" do
-          table_for Invoice.order("created_at desc").limit(5) do
+          table_for CustomerInvoice.order("created_at desc").limit(5) do
             column :invoice_number do |invoice|
               link_to invoice.invoice_number, [:admin, invoice]
             end
